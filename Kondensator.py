@@ -49,7 +49,7 @@ def update_positions(frames):
     plt.scatter(positionsprime,positions_yprime, color = 'red')
     plt.xlim(0, 1)
     plt.ylim(-1, 1)
-
+    plt.axis('off')
 fig, ax = plt.subplots()
 
 ani = animation.FuncAnimation(fig, update_positions, frames=num_frames)
